@@ -1,0 +1,19 @@
+cd app
+python 3-m venv myenv
+source myenv/bin/activate
+pip install -r requirements.txt
+python3 app.py
+
+
+docker login
+    unknownjs
+    plantTest@123
+docker build .  -t unknownjs/plantdisease #give some id with that pull again and run
+docker run -dit -p5000:5000 unknownjs/plantdisease
+dockr push unknownjs/plantdiseasee
+
+
+
+---- in raspi
+
+sudo docker run --platform linux/arm64/v8 -dit -p5000:5000 unknownjs/plantdisease
